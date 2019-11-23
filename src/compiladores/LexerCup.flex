@@ -145,6 +145,8 @@ espacio=[ ,\t,\r,\n]+
 "volatile"                  { return new Symbol(sym.VOLATILE, yychar, yyline, yytext()); }
 "wchar_t"                   { return new Symbol(sym.WCHAR_T, yychar, yyline, yytext()); }
 "while"                     { return new Symbol(sym.WHILE, yychar, yyline, yytext()); }
+"begin"                     { return new Symbol(sym.BEGIN, yychar, yyline, yytext()); }
+"end"                       { return new Symbol(sym.END, yychar, yyline, yytext()); }
 "main"                      { return new Symbol(sym.Main, yychar, yyline, yytext()); }
 "include"                   { return new Symbol(sym.Include, yychar, yyline, yytext()); }
 "h"                         { return new Symbol(sym.Letra_H, yychar, yyline, yytext()); }
