@@ -129,15 +129,336 @@ public class estilos {
                         con++;
                         resultado += "LINEA " + con + "\n";
                         break;
+                    case ASM:
+                        resultado += "<Reservada asm>\t" + lexer.lexeme + "\n";
+                        break;
+                    case AUTO:
+                        resultado += "<Reservada auto>\t" + lexer.lexeme + "\n";
+                        break;
+                    case BOOL:
+                        resultado += "<Reservada bool>\t" + lexer.lexeme + "\n";
+                        break;
+                    case BREAK:
+                        resultado += "<Reservada break>\t" + lexer.lexeme + "\n";
+                        break;
+                    case CASE:
+                        resultado += "<Reservada case>\t" + lexer.lexeme + "\n";
+                        break;
+                    case CATCH:
+                        resultado += "<Reservada catch>\t" + lexer.lexeme + "\n";
+                        break;
+                    case CHAR:
+                        resultado += "<Reservada char>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case CLASS:
+                        resultado += "<Reservada class>\t" + lexer.lexeme + "\n";
+                        break;
+                    case CONST:
+                        resultado += "<Reservada const>\t" + lexer.lexeme + "\n";
+                        break;
+                    case CONST_CAST:
+                        resultado += "<Reservada const_cast>\t" + lexer.lexeme + "\n";
+                        break;
+                    case CONTINUE:
+                        resultado += "<Reservada continue>\t" + lexer.lexeme + "\n";
+                        break;
+                    case DEFAULT:
+                        resultado += "<Reservada default>\t" + lexer.lexeme + "\n";
+                        break;
+                    case DELETE:
+                        resultado += "<Reservada delete>\t" + lexer.lexeme + "\n";
+                        break;
+                    case DO:
+                        resultado += "<Reservada do>\t" + lexer.lexeme + "\n";
+                        break;
+                    case DOUBLE:
+                        resultado += "<Reservada double>\t" + lexer.lexeme + "\n";
+                        break;
+                    case DYNAMIC_CAST:
+                        resultado += "<Reservada dynamic_cast>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ELSE:
+                        resultado += "<Reservada else>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ENUM:
+                        resultado += "<Reservada enum>\t" + lexer.lexeme + "\n";
+                        break;
+                    case EXPLICIT:
+                        resultado += "<Reservada explicit>\t" + lexer.lexeme + "\n";
+                        break;
+                    case EXPORT:
+                        resultado += "<Reservada export>\t" + lexer.lexeme + "\n";
+                        break;
+                    case EXTERN:
+                        resultado += "<Reservada extern>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FALSE:
+                        resultado += "<Reservada false>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FLOAT:
+                        resultado += "<Reservada float>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FOR:
+                        resultado += "<Reservada for>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FRIEND:
+                        resultado += "<Reservada friend>\t" + lexer.lexeme + "\n";
+                        break;
+                    case GOTO:
+                        resultado += "<Reservada goto>\t" + lexer.lexeme + "\n";
+                        break;
+                    case IF:
+                        resultado += "<Reservada if>\t" + lexer.lexeme + "\n";
+                        break;
+                    case INLINE:
+                        resultado += "<Reservada inline>\t" + lexer.lexeme + "\n";
+                        break;
                     case INT:
                         resultado += "<Reservada int>\t" + lexer.lexeme + "\n";
                         break;
                     case LONG:
                         resultado += "<Reservada long>\t" + lexer.lexeme + "\n";
+                        break;                   
+                    case MUTABLE:
+                        resultado += "<Reservada mutable>\t" + lexer.lexeme + "\n";
                         break;
-                    case CHAR:
-                        resultado += "<Reservada char>\t" + lexer.lexeme + "\n";
+                    case NAMESPACE:
+                        resultado += "<Reservada namespace>\t" + lexer.lexeme + "\n";
+                        break;
+                    case NEW:
+                        resultado += "<Reservada new>\t" + lexer.lexeme + "\n";
+                        break;
+                    case OPERATOR:
+                        resultado += "<Reservada operator>\t" + lexer.lexeme + "\n";
+                        break;
+                    case PRIVATE:
+                        resultado += "<Reservada private>\t" + lexer.lexeme + "\n";
+                        break;
+                    case PROTECTED:
+                        resultado += "<Reservada protected>\t" + lexer.lexeme + "\n";
+                        break;
+                    case PUBLIC:
+                        resultado += "<Reservada public>\t" + lexer.lexeme + "\n";
+                        break;
+                    case REGISTER:
+                        resultado += "<Reservada register>\t" + lexer.lexeme + "\n";
+                        break;
+                    case REINTERPRET_CAST:
+                        resultado += "<Reservada reinterpret_cast>\t" + lexer.lexeme + "\n";
+                        break;
+                    case RETURN:
+                        resultado += "<Reservada return>\t" + lexer.lexeme + "\n";
+                        break;
+                    case SHORT:
+                        resultado += "<Reservada short>\t" + lexer.lexeme + "\n";
+                        break;                        
+                    case SIGNED:
+                        resultado += "<Reservada signed>\t" + lexer.lexeme + "\n";
+                        break;
+                    case SIZEOF:
+                        resultado += "<Reservada sizeof>\t" + lexer.lexeme + "\n";
+                        break;
+                    case STATIC:
+                        resultado += "<Reservada static>\t" + lexer.lexeme + "\n";
+                        break;
+                    case STATIC_CAST:
+                        resultado += "<Reservada static_cast>\t" + lexer.lexeme + "\n";
+                        break;
+                    case STRUCT:
+                        resultado += "<Reservada struct>\t" + lexer.lexeme + "\n";
+                        break;
+                    case SWITCH:
+                        resultado += "<Reservada swicth>\t" + lexer.lexeme + "\n";
+                        break;
+                    case TEMPLATE:
+                        resultado += "<Reservada template>\t" + lexer.lexeme + "\n";
+                        break;
+                    case THIS:
+                        resultado += "<Reservada this>\t" + lexer.lexeme + "\n";
+                        break;
+                    case THROW:
+                        resultado += "<Reservada throw>\t" + lexer.lexeme + "\n";
+                        break;
+                    case TRUE:
+                        resultado += "<Reservada true>\t" + lexer.lexeme + "\n";
+                        break;
+                    case TRY:
+                        resultado += "<Reservada try>\t" + lexer.lexeme + "\n";
+                        break;
+                    case TYPEDEF:
+                        resultado += "<Reservada typedef>\t" + lexer.lexeme + "\n";
+                        break;
+                    case TYPEID:
+                        resultado += "<Reservada typeid>\t" + lexer.lexeme + "\n";
+                        break;
+                    case TYPENAME:
+                        resultado += "<Reservada typename>\t" + lexer.lexeme + "\n";
+                        break;
+                    case UNION:
+                        resultado += "<Reservada union>\t" + lexer.lexeme + "\n";
+                        break;
+                    case UNSIGNED:
+                        resultado += "<Reservada unsigned>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case USING:
+                        resultado += "<Reservada using>\t" + lexer.lexeme + "\n";
+                        break;
+                    case VIRTUAL:
+                        resultado += "<Reservada virtual>\t" + lexer.lexeme + "\n";
+                        break;
+                    case VOID:
+                        resultado += "<Reservada void>\t" + lexer.lexeme + "\n";
+                        break;
+                    case VOLATILE:
+                        resultado += "<Reservada volatile>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCHAR_T:
+                        resultado += "<Reservada wchar_t>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WHILE:
+                        resultado += "<Reservada while>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id1:
+                        resultado += "<Reservada id1>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id2:
+                        resultado += "<Reservada id2>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id3:
+                        resultado += "<Reservada id3>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id4:
+                        resultado += "<Reservada id4>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id5:
+                        resultado += "<Reservada id5>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id6:
+                        resultado += "<Reservada id6>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id7:
+                        resultado += "<Reservada id7>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id8:
+                        resultado += "<Reservada id8>\t" + lexer.lexeme + "\n";
+                        break;                       
+                    case id9:
+                        resultado += "<Reservada id9>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id10:
+                        resultado += "<Reservada id10>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id11:
+                        resultado += "<Reservada id11>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id12:
+                        resultado += "<Reservada id12>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id13:
+                        resultado += "<Reservada id13>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id14:
+                        resultado += "<Reservada id14>\t" + lexer.lexeme + "\n";
                         break;    
+                    case id15:
+                        resultado += "<Reservada id15>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id16:
+                        resultado += "<Reservada id16>\t" + lexer.lexeme + "\n";
+                        break;                       
+                    case id17:
+                        resultado += "<Reservada id17>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id18:
+                        resultado += "<Reservada id18>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id19:
+                        resultado += "<Reservada id19>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id20:
+                        resultado += "<Reservada id20>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id21:
+                        resultado += "<Reservada id21>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id22:
+                        resultado += "<Reservada id22>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id23:
+                        resultado += "<Reservada id23>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case id24:
+                        resultado += "<Reservada id24>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ADDEQ:
+                        resultado += "<Reservada addeq>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case SUBEQ:
+                        resultado += "<Reservada subeq>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case MULEQ:
+                        resultado += "<Reservada muleq>\t" + lexer.lexeme + "\n";
+                        break;
+                    case DIVEQ:
+                        resultado += "<Reservada diveq>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case MODEQ:
+                        resultado += "<Reservada modeq>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case XOREQ:
+                        resultado += "<Reservada xoreq>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ANDEQ:
+                        resultado += "<Reservada andeq>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case OREQ:
+                        resultado += "<Reservada oreq>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case SL:
+                        resultado += "<Reservada sl>\t" + lexer.lexeme + "\n";
+                        break;
+                    case SR:
+                        resultado += "<Reservada sr>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case SLEQ:
+                        resultado += "<Reservada sleq>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case EQ:
+                        resultado += "<Reservada eq>\t" + lexer.lexeme + "\n";
+                        break;
+                    case NOTEQ:
+                        resultado += "<Reservada noteq>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case LTEQ:
+                        resultado += "<Reservada lteq>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ANDAND:
+                        resultado += "<Reservada andand>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case OROR:
+                        resultado += "<Reservada oror>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case PLUSPLUS:
+                        resultado += "<Reservada plusplus>\t" + lexer.lexeme + "\n";
+                        break;   
+                    case MINUSMINUS:
+                        resultado += "<Reservada minusminus>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ELLIPSIS:
+                        resultado += "<Reservada ellipsis>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case COLONCOLON:
+                        resultado += "<Reservada coloncolon>\t" + lexer.lexeme + "\n";
+                        break;
+                    case DOTSTAR:
+                        resultado += "<Reservada dotstar>\t" + lexer.lexeme + "\n";
+                        break;
+                    case BEGIN:
+                        resultado += "<Reservada begin>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case END:
+                        resultado += "<Reservada end>\t" + lexer.lexeme + "\n";
+                        break; 
                 }
             }
    }
