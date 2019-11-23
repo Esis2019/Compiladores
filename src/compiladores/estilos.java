@@ -458,7 +458,96 @@ public class estilos {
                         break; 
                     case END:
                         resultado += "<Reservada end>\t" + lexer.lexeme + "\n";
-                        break;     
+                        break; 
+                    case COUT:
+                        resultado += "<Reservada cout>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case CIN:
+                        resultado += "<Reservada cin>\t" + lexer.lexeme + "\n";
+                        break;
+                    /*FUNCIONES ITERATIVAS DE LA CLASE ARRAY*/
+                    case CRBEGIN:
+                        resultado += "<Reservada crbegin>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case CREND:
+                        resultado += "<Reservada crend>\t" + lexer.lexeme + "\n";
+                        break;   
+                    case CBEGIN:
+                        resultado += "<Reservada cbegin>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case CEND:
+                        resultado += "<Reservada cend>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case RBEGIN:
+                        resultado += "<Reservada rbegin>\t" + lexer.lexeme + "\n";
+                        break;
+                    case REND:
+                        resultado += "<Reservada rend>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ISALNUM:
+                        resultado += "<Reservada isalnum>\t" + lexer.lexeme + "\n";
+                        break;   
+                    case ISALPHA:
+                        resultado += "<Reservada isalpha>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISCNTRL:
+                        resultado += "<Reservada iscntrl>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISDIGIT:
+                        resultado += "<Reservada isdigit>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ISGRAPH:
+                        resultado += "<Reservada isgraph>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISLOWER:
+                        resultado += "<Reservada islower>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISPRINT:
+                        resultado += "<Reservada isprint>\t" + lexer.lexeme + "\n";
+                        break;
+                    /*LIBRERIA STDIO.H */
+                    case FPRINTF:
+                        resultado += "<Reservada fprintf>\t" + lexer.lexeme + "\n";
+                        break;   
+                    case FSCANF:
+                        resultado += "<Reservada fscanf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case PRINTF:
+                        resultado += "<Reservada printf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case SCANF:
+                        resultado += "<Reservada scanf>\t" + lexer.lexeme + "\n";
+                        break;
+                    case SNPRINTF:
+                        resultado += "<Reservada snprintf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case SPRINTF:
+                        resultado += "<Reservada sprintf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case SSCANF:
+                        resultado += "<Reservada sscanf>\t" + lexer.lexeme + "\n";
+                        break;
+                    case VFPRINTF:
+                        resultado += "<Reservada vfprintf>\t" + lexer.lexeme + "\n";
+                        break;   
+                    case VFSCANF:
+                        resultado += "<Reservada vfscanf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case VPRINTF:
+                        resultado += "<Reservada vprintf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case VSCANF:
+                        resultado += "<Reservada vscanf>\t" + lexer.lexeme + "\n";
+                        break;
+                    case VSNPRINTF:
+                        resultado += "<Reservada vsnprintf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case VSPRINTF:
+                        resultado += "<Reservada vsprintf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case VSSCANF:
+                        resultado += "<Reservada vsscanf>\t" + lexer.lexeme + "\n";
+                        break;    
                 }
             }
    }
