@@ -547,7 +547,37 @@ public class estilos {
                         break; 
                     case VSSCANF:
                         resultado += "<Reservada vsscanf>\t" + lexer.lexeme + "\n";
-                        break;    
+                        break; 
+                    case REMOVE:
+                        resultado += "<Reservada remove>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case RENAME:
+                        resultado += "<Reservada rename>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case TMPFILE:
+                        resultado += "<Reservada tmpfile>\t" + lexer.lexeme + "\n";
+                        break;
+                    case TMPNAM:
+                        resultado += "<Reservada tmpnam>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FCLOSE:
+                        resultado += "<Reservada fclose>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FFLUSH:
+                        resultado += "<Reservada fflush>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FOPEN:
+                        resultado += "<Reservada fopen>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FREOPEN:
+                        resultado += "<Reservada freopen>\t" + lexer.lexeme + "\n";
+                        break;
+                    case SETBUF:
+                        resultado += "<Reservada setbuf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case SETVBUF:
+                        resultado += "<Reservada setvbuf>\t" + lexer.lexeme + "\n";
+                        break;   
                 }
             }
    }

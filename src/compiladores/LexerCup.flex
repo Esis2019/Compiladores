@@ -180,6 +180,16 @@ espacio=[ ,\t,\r,\n]+
 "vsnprintf"                 { return new Symbol(sym.VSNPRINTF, yychar, yyline, yytext()); }
 "vsprintf"                  { return new Symbol(sym.VSPRINTF, yychar, yyline, yytext()); }
 "vsscanf"                   { return new Symbol(sym.VSSCANF, yychar, yyline, yytext()); }
+"remove"                    { return new Symbol(sym.REMOVE, yychar, yyline, yytext()); }
+"rename"                    { return new Symbol(sym.RENAME, yychar, yyline, yytext()); }
+"tmpfile"                   { return new Symbol(sym.TMPFILE, yychar, yyline, yytext()); }
+"tmpnam"                    { return new Symbol(sym.TMPNAM, yychar, yyline, yytext()); }
+"fclose"                    { return new Symbol(sym.FCLOSE, yychar, yyline, yytext()); }
+"fflush"                    { return new Symbol(sym.FFLUSH, yychar, yyline, yytext()); }
+"fopen"                     { return new Symbol(sym.FOPEN, yychar, yyline, yytext()); }
+"freopen"                   { return new Symbol(sym.FREOPEN, yychar, yyline, yytext()); }
+"setbuf"                    { return new Symbol(sym.SETBUF, yychar, yyline, yytext()); }
+"setvbuf"                   { return new Symbol(sym.SETVBUF, yychar, yyline, yytext()); }
 "main"                      { return new Symbol(sym.Main, yychar, yyline, yytext()); }
 "include"                   { return new Symbol(sym.Include, yychar, yyline, yytext()); }
 "h"                         { return new Symbol(sym.Letra_H, yychar, yyline, yytext()); }
