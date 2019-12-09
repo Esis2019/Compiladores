@@ -1000,6 +1000,267 @@ public class estilos {
                     case WCSTOMBS:
                         resultado += "<Reservada wcstombs>\t" + lexer.lexeme + "\n";
                         break;
+                    /*LIBRERIA STRING.H */   
+                    case MEMCPY:
+                        resultado += "<Reservada memcpy>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case MEMMOVE:
+                        resultado += "<Reservada memmove>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case STRCPY:
+                        resultado += "<Reservada strcpy>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case STRNCPY:
+                        resultado += "<Reservada strncpy>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case STRCAT:
+                        resultado += "<Reservada strcat>\t" + lexer.lexeme + "\n";
+                        break;
+                    case STRNCAT:
+                        resultado += "<Reservada strncat>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case MEMCMP:
+                        resultado += "<Reservada memcmp>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case STRCMP:
+                        resultado += "<Reservada strcmp>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case STRXFRM:
+                        resultado += "<Reservada strxfrm>\t" + lexer.lexeme + "\n";
+                        break;   
+                    case MEMCHR:
+                        resultado += "<Reservada memchr>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case STRCHR:
+                        resultado += "<Reservada strchr>\t" + lexer.lexeme + "\n";
+                        break;
+                    case STRCSPN:
+                        resultado += "<Reservada strcspn>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case STRPBRK:
+                        resultado += "<Reservada strpbrk>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case STRRCHR:
+                        resultado += "<Reservada strrchr>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case STRSPN:
+                        resultado += "<Reservada strspn>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case STRSTR:
+                        resultado += "<Reservada strstr>\t" + lexer.lexeme + "\n";
+                        break;
+                    case STRTOK:
+                        resultado += "<Reservada strtok>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case MEMSET:
+                        resultado += "<Reservada memset>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case STRERROR:
+                        resultado += "<Reservada strerror>\t" + lexer.lexeme + "\n";
+                        break;
+                    case STRLEN:
+                        resultado += "<Reservada strlen>\t" + lexer.lexeme + "\n";
+                        break; 
+                    /*LIBRERIA TIME.H */   
+                    case CLOCK:
+                        resultado += "<Reservada clock>\t" + lexer.lexeme + "\n";
+                        break;
+                    case DIFFTIME:
+                        resultado += "<Reservada difftime>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case MKTIME:
+                        resultado += "<Reservada mktime>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case TIME:
+                        resultado += "<Reservada time>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ASCTIME:
+                        resultado += "<Reservada asctime>\t" + lexer.lexeme + "\n";
+                        break;
+                    case CTIME:
+                        resultado += "<Reservada ctime>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case GMTIME:
+                        resultado += "<Reservada gmtime>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case LOCALTIME:
+                        resultado += "<Reservada localtime>\t" + lexer.lexeme + "\n";
+                        break;
+                    case STRFTIME:
+                        resultado += "<Reservada strftime>\t" + lexer.lexeme + "\n";
+                        break;  
+                    /*LIBRERIA WCHAR.H */     
+                    case FGETWC:
+                        resultado += "<Reservada fgetwc>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FGETWS:
+                        resultado += "<Reservada fgetws>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case FPUTWC:
+                        resultado += "<Reservada fputwc>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FPUTWS:
+                        resultado += "<Reservada fputws>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FWIDE:
+                        resultado += "<Reservada fwide>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FWPRINTF:
+                        resultado += "<Reservada fwprintf>\t" + lexer.lexeme + "\n";
+                        break;    
+                    case FWSCANF:
+                        resultado += "<Reservada fwscanf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case GETWC:
+                        resultado += "<Reservada getwc>\t" + lexer.lexeme + "\n";
+                        break;
+                    case GETWCHAR:
+                        resultado += "<Reservada getwchar>\t" + lexer.lexeme + "\n";
+                        break;    
+                    case PUTWC:
+                        resultado += "<Reservada putwc>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case PUTWCHAR:
+                        resultado += "<Reservada putwchar>\t" + lexer.lexeme + "\n";
+                        break;
+                    case SWPRINTF:
+                        resultado += "<Reservada swprintf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case SWSCANF:
+                        resultado += "<Reservada swscanf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case UNGETWC:
+                        resultado += "<Reservada ungetwc>\t" + lexer.lexeme + "\n";
+                        break;
+                    case VFWPRINTF:
+                        resultado += "<Reservada vfwprintf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case VFWSCANF:
+                        resultado += "<Reservada vfwscanf>\t" + lexer.lexeme + "\n";
+                        break;    
+                    case VWPRINTF:
+                        resultado += "<Reservada vwprintf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case VWSCANF:
+                        resultado += "<Reservada vwscanf>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WPRINTF:
+                        resultado += "<Reservada wprintf>\t" + lexer.lexeme + "\n";
+                        break;    
+                    case WSCANF:
+                        resultado += "<Reservada wscanf>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCSTOD:
+                        resultado += "<Reservada wcstod>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSTOF:
+                        resultado += "<Reservada wcstof>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCSTOL:
+                        resultado += "<Reservada wcstol>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCSTOLD:
+                        resultado += "<Reservada wcstold>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSTOLL:
+                        resultado += "<Reservada wcstoll>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSTOUL:
+                        resultado += "<Reservada wcstoul>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSTOULL:
+                        resultado += "<Reservada wcstoull>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case BTOWC:
+                        resultado += "<Reservada btowc>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case MBRLEN:
+                        resultado += "<Reservada mbrlen>\t" + lexer.lexeme + "\n";
+                        break;
+                    case MBRTOWC:
+                        resultado += "<Reservada mbrtowc>\t" + lexer.lexeme + "\n";
+                        break;
+                    case MBSINIT:
+                        resultado += "<Reservada mbsinit>\t" + lexer.lexeme + "\n";
+                        break;
+                    case MBSRTOWCS:
+                        resultado += "<Reservada mbsrtowcs>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCRTOMB:
+                        resultado += "<Reservada wcrtomb>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCTOB:
+                        resultado += "<Reservada wctob>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCSRTOMBS:
+                        resultado += "<Reservada wcsrtombs>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCSCAT:
+                        resultado += "<Reservada wcscat>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSCHR:
+                        resultado += "<Reservada wcschr>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSCMP:
+                        resultado += "<Reservada wcscmp>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSCOLL:
+                        resultado += "<Reservada wcscoll>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSCPY:
+                        resultado += "<Reservada wcscpy>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSCSPN:
+                        resultado += "<Reservada wcscspn>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCSLEN:
+                        resultado += "<Reservada wcslen>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCSNCAT:
+                        resultado += "<Reservada wcsncat>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSNCMP:
+                        resultado += "<Reservada wcsncmp>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSNCPY:
+                        resultado += "<Reservada wcsncpy>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSPBRK:
+                        resultado += "<Reservada wcspbrk>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCSRCHR:
+                        resultado += "<Reservada wcsrchr>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCSSPN:
+                        resultado += "<Reservada wcsspn>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSSTR:
+                        resultado += "<Reservada wcsstr>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSTOK:
+                        resultado += "<Reservada wcstok>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSXFRM:
+                        resultado += "<Reservada wcsxfrm>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WMEMCHR:
+                        resultado += "<Reservada wmemchr>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WMEMCMP:
+                        resultado += "<Reservada wmemcmp>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WMEMCPY:
+                        resultado += "<Reservada wmemcpy>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WMEMMOVE:
+                        resultado += "<Reservada wmemmove>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WMEMSET:
+                        resultado += "<Reservada wmemset>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCSFTIME:
+                        resultado += "<Reservada wcsftime>\t" + lexer.lexeme + "\n";
+                        break;
                 }
             }
    }
