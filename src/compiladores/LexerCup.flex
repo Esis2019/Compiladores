@@ -190,11 +190,23 @@ espacio=[ ,\t,\r,\n]+
 "freopen"                   { return new Symbol(sym.FREOPEN, yychar, yyline, yytext()); }
 "setbuf"                    { return new Symbol(sym.SETBUF, yychar, yyline, yytext()); }
 "setvbuf"                   { return new Symbol(sym.SETVBUF, yychar, yyline, yytext()); }
+"tolower"                   { return new Symbol(sym.TOLOWER, yychar, yyline, yytext()); }
+"toupper"                   { return new Symbol(sym.TOUPPER, yychar, yyline, yytext()); }
+"feclearexcept"             { return new Symbol(sym.FECLEAREXCEPT, yychar, yyline, yytext()); }
+"feraiseexcept"             { return new Symbol(sym.FERAISEEXCEPT, yychar, yyline, yytext()); }
+"fegetexceptflag"           { return new Symbol(sym.FEGETEXCEPTFLAG, yychar, yyline, yytext()); }
+"fesetexceptflag"           { return new Symbol(sym.FESETEXCEPTFLAG, yychar, yyline, yytext()); }
+"fegetround"                { return new Symbol(sym.FEGETROUND, yychar, yyline, yytext()); }
+"fesetround"                { return new Symbol(sym.FESETROUND, yychar, yyline, yytext()); }
+"fegetenv"                  { return new Symbol(sym.FEGETENV, yychar, yyline, yytext()); }
+"Fesetenv"                  { return new Symbol(sym.FESETENV, yychar, yyline, yytext()); }
+"feholdexcept"              { return new Symbol(sym.FEHOLDEXCEPT, yychar, yyline, yytext()); }
+"feupdateenv"               { return new Symbol(sym.FEUPDATEENV, yychar, yyline, yytext()); }
+"fetestexcept"              { return new Symbol(sym.FETESTEXCEPT, yychar, yyline, yytext()); }
 "main"                      { return new Symbol(sym.Main, yychar, yyline, yytext()); }
 "include"                   { return new Symbol(sym.Include, yychar, yyline, yytext()); }
 "h"                         { return new Symbol(sym.Letra_H, yychar, yyline, yytext()); }
-(iostream | conio | math ) {return new Symbol(sym.Libreria, yychar, yyline, yytext());}
-
+(iostream | conio | math |ctype | fenv | stdio) {return new Symbol(sym.Libreria, yychar, yyline, yytext());}
 {L}({L}|{D})*               { return new Symbol(sym.ident, yychar, yyline, yytext()); }
 ("(-"{D}+")")|{D}+          { return new Symbol(sym.numero, yychar, yyline, yytext()); }
 .                           { return new Symbol(sym.ERROR, yychar, yyline, yytext()); }

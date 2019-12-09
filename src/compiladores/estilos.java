@@ -484,6 +484,7 @@ public class estilos {
                     case REND:
                         resultado += "<Reservada rend>\t" + lexer.lexeme + "\n";
                         break;
+                    /*LIBRERIA CTYPE.H */
                     case ISALNUM:
                         resultado += "<Reservada isalnum>\t" + lexer.lexeme + "\n";
                         break;   
@@ -505,6 +506,24 @@ public class estilos {
                     case ISPRINT:
                         resultado += "<Reservada isprint>\t" + lexer.lexeme + "\n";
                         break;
+                    case ISPUNCT:
+                        resultado += "<Reservada ispunct>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISSPACE:
+                        resultado += "<Reservada isspace>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ISUPPER:
+                        resultado += "<Reservada isupper>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISXDIGIT:
+                        resultado += "<Reservada isxdigit>\t" + lexer.lexeme + "\n";
+                        break;
+                    case TOLOWER:
+                        resultado += "<Reservada tolower>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case TOUPPER:
+                        resultado += "<Reservada toupper>\t" + lexer.lexeme + "\n";
+                        break; 
                     /*LIBRERIA STDIO.H */
                     case FPRINTF:
                         resultado += "<Reservada fprintf>\t" + lexer.lexeme + "\n";
@@ -547,7 +566,7 @@ public class estilos {
                         break; 
                     case VSSCANF:
                         resultado += "<Reservada vsscanf>\t" + lexer.lexeme + "\n";
-                        break; 
+                        break;
                     case REMOVE:
                         resultado += "<Reservada remove>\t" + lexer.lexeme + "\n";
                         break; 
@@ -577,7 +596,41 @@ public class estilos {
                         break; 
                     case SETVBUF:
                         resultado += "<Reservada setvbuf>\t" + lexer.lexeme + "\n";
-                        break;   
+                        break; 
+                    /*LIBRERIA FENV.H */
+                    case FECLEAREXCEPT:
+                        resultado += "<Reservada feclearexcep>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FERAISEEXCEPT:
+                        resultado += "<Reservada feraiseexcept>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FEGETEXCEPTFLAG:
+                        resultado += "<Reservada fegetexceptflag>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FESETEXCEPTFLAG:
+                        resultado += "<Reservada fesetexceptflag>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FEGETROUND:
+                        resultado += "<Reservada fegetround>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FESETROUND:
+                        resultado += "<Reservada fesetround>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FEGETENV:
+                        resultado += "<Reservada fegetenv>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FESETENV:
+                        resultado += "<Reservada Fesetenv>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FEHOLDEXCEPT:
+                        resultado += "<Reservada feholdexcept>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FEUPDATEENV:
+                        resultado += "<Reservada feupdateenv>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case FETESTEXCEPT:
+                        resultado += "<Reservada fetestexcept>\t" + lexer.lexeme + "\n";
+                        break;
                 }
             }
    }
