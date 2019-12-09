@@ -263,6 +263,15 @@ espacio=[ ,\t,\r,\n]+
 "abs"                       { return new Symbol(sym.ABS, yychar, yyline, yytext()); }
 "fma"                       { return new Symbol(sym.FMA, yychar, yyline, yytext()); }
 "main"                      { return new Symbol(sym.Main, yychar, yyline, yytext()); }
+"fgetc"                     { return new Symbol(sym.FGETC, yychar, yyline, yytext()); }
+"fgets"                     { return new Symbol(sym.FGETS, yychar, yyline, yytext()); }
+"fputc"                     { return new Symbol(sym.FUTS, yychar, yyline, yytext()); }
+"fputs"                     { return new Symbol(sym.FPUTS, yychar, yyline, yytext()); }
+"getc"                      { return new Symbol(sym.GETC, yychar, yyline, yytext()); }
+"getchar"                   { return new Symbol(sym.GETCHAR, yychar, yyline, yytext()); }
+"gets"                      { return new Symbol(sym.GETS, yychar, yyline, yytext()); }
+"putc"                      { return new Symbol(sym.PUTC, yychar, yyline, yytext()); }
+"putchar"                   { return new Symbol(sym.PUTCHAR, yychar, yyline, yytext()); }
 "include"                   { return new Symbol(sym.Include, yychar, yyline, yytext()); }
 "h"                         { return new Symbol(sym.Letra_H, yychar, yyline, yytext()); }
 (iostream | conio | math |ctype | fenv | stdio) {return new Symbol(sym.Libreria, yychar, yyline, yytext());}
