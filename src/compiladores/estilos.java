@@ -1261,6 +1261,105 @@ public class estilos {
                     case WCSFTIME:
                         resultado += "<Reservada wcsftime>\t" + lexer.lexeme + "\n";
                         break;
+                    case ISWALNUM:
+                        resultado += "<Reservada iswalnum>\t" + lexer.lexeme + "\n";
+                        break;   
+                    case ISWALPHA:
+                        resultado += "<Reservada iswalpha>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISWBLANK:
+                        resultado += "<Reservada iswblank>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ISWCNTRL:
+                        resultado += "<Reservada iswcntrl>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISWDIGIT:
+                        resultado += "<Reservada iswdigit>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ISWGRAPH:
+                        resultado += "<Reservada iswgraph>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISWLOWER:
+                        resultado += "<Reservada islower>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISWPRINT:
+                        resultado += "<Reservada iswprint>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ISWPUNCT:
+                        resultado += "<Reservada iswpunct>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISWSPACE:
+                        resultado += "<Reservada iswspace>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ISWUPPER:
+                        resultado += "<Reservada iswupper>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case ISWXDIGIT:
+                        resultado += "<Reservada iswxdigit>\t" + lexer.lexeme + "\n";
+                        break;
+                    case TOWLOWER:
+                        resultado += "<Reservada towlower>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case TOWUPPER:
+                        resultado += "<Reservada towupper>\t" + lexer.lexeme + "\n";
+                        break;  
+                    case ISWCTYPE:
+                        resultado += "<Reservada iswctype>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case TOWCTRANS:
+                        resultado += "<Reservada towctrans>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCTRANS:
+                        resultado += "<Reservada wctrans>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCTYPE:
+                        resultado += "<Reservada wctype>\t" + lexer.lexeme + "\n";
+                        break;
+                    case CERR:
+                        resultado += "<Reservada cerr>\t" + lexer.lexeme + "\n";
+                        break;
+                    case CLOG:
+                        resultado += "<Reservada clog>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCIN:
+                        resultado += "<Reservada wcin>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCOUT:
+                        resultado += "<Reservada wcout>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WCERR:
+                        resultado += "<Reservada wcerr>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WCLOG:
+                        resultado += "<Reservada wclog>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ISTREAM:
+                        resultado += "<Reservada istream>\t" + lexer.lexeme + "\n";
+                        break;
+                    case IOSTREAM:
+                        resultado += "<Reservada iostream>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case WISTREAM:
+                        resultado += "<Reservada wistream>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WIOSTREAM:
+                        resultado += "<Reservada wiostream>\t" + lexer.lexeme + "\n";
+                        break;
+                    case OSTREAM:
+                        resultado += "<Reservada ostream>\t" + lexer.lexeme + "\n";
+                        break;
+                    case WOSTREAM:
+                        resultado += "<Reservada wostream>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ENDL:
+                        resultado += "<Reservada endl>\t" + lexer.lexeme + "\n";
+                        break;
+                    case ENDS:
+                        resultado += "<Reservada ends>\t" + lexer.lexeme + "\n";
+                        break;
+                    case FLUSH:
+                        resultado += "<Reservada flush>\t" + lexer.lexeme + "\n";
+                        break;
                 }
             }
    }

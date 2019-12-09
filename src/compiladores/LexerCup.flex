@@ -410,6 +410,41 @@ espacio=[ ,\t,\r,\n]+
 "wmemmove"                  { return new Symbol(sym.WMEMMOVE, yychar, yyline, yytext()); }
 "wmemset"                   { return new Symbol(sym.WMEMSET, yychar, yyline, yytext()); }
 "wcsftime"                  { return new Symbol(sym.WCSFTIME, yychar, yyline, yytext()); }
+"iswalnum"                  { return new Symbol(sym.ISWALNUM, yychar, yyline, yytext()); }
+"iswalpha"                  { return new Symbol(sym.ISWALPHA, yychar, yyline, yytext()); }
+"iswblank"                  { return new Symbol(sym.ISWBLANK, yychar, yyline, yytext()); }
+"iswcntrl"                  { return new Symbol(sym.ISWCNTRL, yychar, yyline, yytext()); }
+"iswdigit"                  { return new Symbol(sym.ISWDIGIT, yychar, yyline, yytext()); }
+"iswgraph"                  { return new Symbol(sym.ISWGRAPH, yychar, yyline, yytext()); }
+"iswlower"                  { return new Symbol(sym.ISWLOWER, yychar, yyline, yytext()); }
+"iswprint"                  { return new Symbol(sym.ISWPRINT, yychar, yyline, yytext()); }
+"iswpunct"                  { return new Symbol(sym.ISWPUNCT, yychar, yyline, yytext()); }
+"iswspace"                  { return new Symbol(sym.ISWSPACE, yychar, yyline, yytext()); }
+"iswupper"                  { return new Symbol(sym.ISWUPPER, yychar, yyline, yytext()); }
+"iswxdigit"                 { return new Symbol(sym.ISWXDIGIT, yychar, yyline, yytext()); }
+"towlower"                  { return new Symbol(sym.TOWLOWER, yychar, yyline, yytext()); }
+"towupper"                  { return new Symbol(sym.TOWUPPER, yychar, yyline, yytext()); }
+"iswctype"                  { return new Symbol(sym.ISWCTYPE, yychar, yyline, yytext()); }
+"towctrans"                 { return new Symbol(sym.TOWCTRANS, yychar, yyline, yytext()); }
+"wctrans"                   { return new Symbol(sym.WCTRANS, yychar, yyline, yytext()); }
+"wctype"                    { return new Symbol(sym.WCTYPE, yychar, yyline, yytext()); }
+"cerr"                      { return new Symbol(sym.CERR, yychar, yyline, yytext()); }
+"clog"                      { return new Symbol(sym.CLOG, yychar, yyline, yytext()); }
+"wcin"                      { return new Symbol(sym.WCIN, yychar, yyline, yytext()); }
+"wcout"                     { return new Symbol(sym.WCOUT, yychar, yyline, yytext()); }
+"wcerr"                     { return new Symbol(sym.WCERR, yychar, yyline, yytext()); }
+"wclog"                     { return new Symbol(sym.WCLOG, yychar, yyline, yytext()); }
+"istream"                   { return new Symbol(sym.ISTREAM, yychar, yyline, yytext()); }
+"iostream"                  { return new Symbol(sym.IOSTREAM, yychar, yyline, yytext()); }
+"wistream"                  { return new Symbol(sym.WISTREAM, yychar, yyline, yytext()); }
+"wiostream"                 { return new Symbol(sym.WIOSTREAM, yychar, yyline, yytext()); }
+"ostream"                   { return new Symbol(sym.OSTREAM, yychar, yyline, yytext()); }
+"wostream"                  { return new Symbol(sym.WOSTREAM, yychar, yyline, yytext()); }
+"endl"                      { return new Symbol(sym.ENDL, yychar, yyline, yytext()); }
+"ends"                      { return new Symbol(sym.ENDS, yychar, yyline, yytext()); }
+"fflush"                    { return new Symbol(sym.FLUSH, yychar, yyline, yytext()); }
+
+
 
 "main"                      { return new Symbol(sym.Main, yychar, yyline, yytext()); }
 "include"                   { return new Symbol(sym.Include, yychar, yyline, yytext()); }
