@@ -459,12 +459,6 @@ public class estilos {
                     case END:
                         resultado += "<Reservada end>\t" + lexer.lexeme + "\n";
                         break; 
-                    case COUT:
-                        resultado += "<Reservada cout>\t" + lexer.lexeme + "\n";
-                        break; 
-                    case CIN:
-                        resultado += "<Reservada cin>\t" + lexer.lexeme + "\n";
-                        break;
                     /*FUNCIONES ITERATIVAS DE LA CLASE ARRAY*/
                     case CRBEGIN:
                         resultado += "<Reservada crbegin>\t" + lexer.lexeme + "\n";
@@ -1261,6 +1255,7 @@ public class estilos {
                     case WCSFTIME:
                         resultado += "<Reservada wcsftime>\t" + lexer.lexeme + "\n";
                         break;
+                    /*LIBRERIA CTYPE.H */ 
                     case ISWALNUM:
                         resultado += "<Reservada iswalnum>\t" + lexer.lexeme + "\n";
                         break;   
@@ -1315,6 +1310,13 @@ public class estilos {
                     case WCTYPE:
                         resultado += "<Reservada wctype>\t" + lexer.lexeme + "\n";
                         break;
+                    /*INPUT/ OUTPUT  IOSTREAM */
+                    case COUT:
+                        resultado += "<Reservada cout>\t" + lexer.lexeme + "\n";
+                        break; 
+                    case CIN:
+                        resultado += "<Reservada cin>\t" + lexer.lexeme + "\n";
+                        break;
                     case CERR:
                         resultado += "<Reservada cerr>\t" + lexer.lexeme + "\n";
                         break;
@@ -1333,6 +1335,7 @@ public class estilos {
                     case WCLOG:
                         resultado += "<Reservada wclog>\t" + lexer.lexeme + "\n";
                         break;
+                    /*INPUT/ OUTPUT  ISTREAM */ 
                     case ISTREAM:
                         resultado += "<Reservada istream>\t" + lexer.lexeme + "\n";
                         break;
@@ -1345,6 +1348,7 @@ public class estilos {
                     case WIOSTREAM:
                         resultado += "<Reservada wiostream>\t" + lexer.lexeme + "\n";
                         break;
+                    /*INPUT/ OUTPUT  OSTREAM */ 
                     case OSTREAM:
                         resultado += "<Reservada ostream>\t" + lexer.lexeme + "\n";
                         break;

@@ -145,6 +145,7 @@ espacio=[ ,\t,\r,\n]+
 "volatile"                  { return new Symbol(sym.VOLATILE, yychar, yyline, yytext()); }
 "wchar_t"                   { return new Symbol(sym.WCHAR_T, yychar, yyline, yytext()); }
 "while"                     { return new Symbol(sym.WHILE, yychar, yyline, yytext()); }
+/*FUNCIONES ITERATIVAS DE LA CLASE ARRAY*/
 "begin"                     { return new Symbol(sym.BEGIN, yychar, yyline, yytext()); }
 "end"                       { return new Symbol(sym.END, yychar, yyline, yytext()); }
 "cbegin"                    { return new Symbol(sym.CBEGIN, yychar, yyline, yytext()); }
@@ -153,8 +154,7 @@ espacio=[ ,\t,\r,\n]+
 "rend"                      { return new Symbol(sym.REND, yychar, yyline, yytext()); }
 "crbegin"                   { return new Symbol(sym.CRBEGIN, yychar, yyline, yytext()); }
 "crend"                     { return new Symbol(sym.CREND, yychar, yyline, yytext()); }
-"cin"                       { return new Symbol(sym.CIN, yychar, yyline, yytext()); }
-"cout"                      { return new Symbol(sym.COUT, yychar, yyline, yytext()); }
+/*LIBRERIA CTYPE.H */
 "isalnum"                   { return new Symbol(sym.ISALNUM, yychar, yyline, yytext()); }
 "isalpha"                   { return new Symbol(sym.ISALPHA, yychar, yyline, yytext()); }
 "iscntrl"                   { return new Symbol(sym.ISCNTRL, yychar, yyline, yytext()); }
@@ -166,6 +166,9 @@ espacio=[ ,\t,\r,\n]+
 "isspace"                   { return new Symbol(sym.ISSPACE, yychar, yyline, yytext()); }
 "isupper"                   { return new Symbol(sym.ISUPPER, yychar, yyline, yytext()); }
 "isxdigit"                  { return new Symbol(sym.ISXDIGIT, yychar, yyline, yytext()); }
+"tolower"                   { return new Symbol(sym.TOLOWER, yychar, yyline, yytext()); }
+"toupper"                   { return new Symbol(sym.TOUPPER, yychar, yyline, yytext()); }
+ /*LIBRERIA STDIO.H */
 "fprintf"                   { return new Symbol(sym.FPRINTF, yychar, yyline, yytext()); }
 "fscanf"                    { return new Symbol(sym.FSCANF, yychar, yyline, yytext()); }
 "printf"                    { return new Symbol(sym.PRINTF, yychar, yyline, yytext()); }
@@ -190,8 +193,7 @@ espacio=[ ,\t,\r,\n]+
 "freopen"                   { return new Symbol(sym.FREOPEN, yychar, yyline, yytext()); }
 "setbuf"                    { return new Symbol(sym.SETBUF, yychar, yyline, yytext()); }
 "setvbuf"                   { return new Symbol(sym.SETVBUF, yychar, yyline, yytext()); }
-"tolower"                   { return new Symbol(sym.TOLOWER, yychar, yyline, yytext()); }
-"toupper"                   { return new Symbol(sym.TOUPPER, yychar, yyline, yytext()); }
+/*LIBRERIA FENV.H */
 "feclearexcept"             { return new Symbol(sym.FECLEAREXCEPT, yychar, yyline, yytext()); }
 "feraiseexcept"             { return new Symbol(sym.FERAISEEXCEPT, yychar, yyline, yytext()); }
 "fegetexceptflag"           { return new Symbol(sym.FEGETEXCEPTFLAG, yychar, yyline, yytext()); }
@@ -203,8 +205,10 @@ espacio=[ ,\t,\r,\n]+
 "feholdexcept"              { return new Symbol(sym.FEHOLDEXCEPT, yychar, yyline, yytext()); }
 "feupdateenv"               { return new Symbol(sym.FEUPDATEENV, yychar, yyline, yytext()); }
 "fetestexcept"              { return new Symbol(sym.FETESTEXCEPT, yychar, yyline, yytext()); }
+/*LIBRERIA LOCALE.H */ 
 "setlocale"                 { return new Symbol(sym.SETLOCALE, yychar, yyline, yytext()); }
 "localeconv"                { return new Symbol(sym.LOCALECONV, yychar, yyline, yytext()); }
+/*LIBRERIA MATH.H */ 
 "cos"                       { return new Symbol(sym.COS, yychar, yyline, yytext()); }
 "sin"                       { return new Symbol(sym.SIN, yychar, yyline, yytext()); }
 "tan"                       { return new Symbol(sym.TAN, yychar, yyline, yytext()); }
@@ -262,9 +266,12 @@ espacio=[ ,\t,\r,\n]+
 "fabs"                      { return new Symbol(sym.FABS, yychar, yyline, yytext()); }
 "abs"                       { return new Symbol(sym.ABS, yychar, yyline, yytext()); }
 "fma"                       { return new Symbol(sym.FMA, yychar, yyline, yytext()); }
+/*LIBRERIA SETJMP.H */
 "Longjmp"                   { return new Symbol(sym.LONGJMP, yychar, yyline, yytext()); }
+/*LIBRERIA SIGNAL.H */
 "signal"                    { return new Symbol(sym.SIGNAL, yychar, yyline, yytext()); }
 "raise"                     { return new Symbol(sym.RAISE, yychar, yyline, yytext()); }
+/*LIBRERIA STDIO.H */ 
 "fgetc"                     { return new Symbol(sym.FGETC, yychar, yyline, yytext()); }
 "fgets"                     { return new Symbol(sym.FGETS, yychar, yyline, yytext()); }
 "fputc"                     { return new Symbol(sym.FPUTC, yychar, yyline, yytext()); }
@@ -287,6 +294,7 @@ espacio=[ ,\t,\r,\n]+
 "feof"                      { return new Symbol(sym.FEOF, yychar, yyline, yytext()); }
 "ferror"                    { return new Symbol(sym.FERROR, yychar, yyline, yytext()); }
 "perror"                    { return new Symbol(sym.PERROR, yychar, yyline, yytext()); }
+/*LIBRERIA STLIB.H */
 "atof"                      { return new Symbol(sym.ATOF, yychar, yyline, yytext()); }
 "atoi"                      { return new Symbol(sym.ATOI, yychar, yyline, yytext()); }
 "atol"                      { return new Symbol(sym.ATOL, yychar, yyline, yytext()); }
@@ -324,6 +332,7 @@ espacio=[ ,\t,\r,\n]+
 "wctomb"                    { return new Symbol(sym.WCTOMB, yychar, yyline, yytext()); }
 "mbstowcs"                  { return new Symbol(sym.MBSTOWCS, yychar, yyline, yytext()); }
 "wcstombs"                  { return new Symbol(sym.WCSTOMBS, yychar, yyline, yytext()); }
+/*LIBRERIA STRING.H */ 
 "memcpy"                    { return new Symbol(sym.MEMCPY, yychar, yyline, yytext()); }
 "memmove"                   { return new Symbol(sym.MEMMOVE, yychar, yyline, yytext()); }
 "strcpy"                    { return new Symbol(sym.STRCPY, yychar, yyline, yytext()); }
@@ -344,6 +353,7 @@ espacio=[ ,\t,\r,\n]+
 "memset"                    { return new Symbol(sym.MEMSET, yychar, yyline, yytext()); }
 "strerror"                  { return new Symbol(sym.STRERROR, yychar, yyline, yytext()); }
 "strlen"                    { return new Symbol(sym.STRLEN, yychar, yyline, yytext()); }
+ /*LIBRERIA TIME.H */ 
 "clock"                     { return new Symbol(sym.CLOCK, yychar, yyline, yytext()); }
 "difftime"                  { return new Symbol(sym.DIFFTIME, yychar, yyline, yytext()); }
 "mktime"                    { return new Symbol(sym.MKTIME, yychar, yyline, yytext()); }
@@ -353,6 +363,7 @@ espacio=[ ,\t,\r,\n]+
 "gmtime"                    { return new Symbol(sym.GMTIME, yychar, yyline, yytext()); }
 "localtime"                 { return new Symbol(sym.LOCALTIME, yychar, yyline, yytext()); }
 "strftime"                  { return new Symbol(sym.STRFTIME, yychar, yyline, yytext()); }
+/*LIBRERIA WCHAR.H */ 
 "fgetwc"                    { return new Symbol(sym.FGETWC, yychar, yyline, yytext()); }
 "fgetws"                    { return new Symbol(sym.FGETWS, yychar, yyline, yytext()); }
 "fputwc"                    { return new Symbol(sym.FPUTWC, yychar, yyline, yytext()); }
@@ -410,6 +421,7 @@ espacio=[ ,\t,\r,\n]+
 "wmemmove"                  { return new Symbol(sym.WMEMMOVE, yychar, yyline, yytext()); }
 "wmemset"                   { return new Symbol(sym.WMEMSET, yychar, yyline, yytext()); }
 "wcsftime"                  { return new Symbol(sym.WCSFTIME, yychar, yyline, yytext()); }
+/*LIBRERIA CTYPE.H */
 "iswalnum"                  { return new Symbol(sym.ISWALNUM, yychar, yyline, yytext()); }
 "iswalpha"                  { return new Symbol(sym.ISWALPHA, yychar, yyline, yytext()); }
 "iswblank"                  { return new Symbol(sym.ISWBLANK, yychar, yyline, yytext()); }
@@ -428,16 +440,21 @@ espacio=[ ,\t,\r,\n]+
 "towctrans"                 { return new Symbol(sym.TOWCTRANS, yychar, yyline, yytext()); }
 "wctrans"                   { return new Symbol(sym.WCTRANS, yychar, yyline, yytext()); }
 "wctype"                    { return new Symbol(sym.WCTYPE, yychar, yyline, yytext()); }
+/*INPUT/ OUTPUT  IOSTREAM */
+"cin"                       { return new Symbol(sym.CIN, yychar, yyline, yytext()); }
+"cout"                      { return new Symbol(sym.COUT, yychar, yyline, yytext()); }
 "cerr"                      { return new Symbol(sym.CERR, yychar, yyline, yytext()); }
 "clog"                      { return new Symbol(sym.CLOG, yychar, yyline, yytext()); }
 "wcin"                      { return new Symbol(sym.WCIN, yychar, yyline, yytext()); }
 "wcout"                     { return new Symbol(sym.WCOUT, yychar, yyline, yytext()); }
 "wcerr"                     { return new Symbol(sym.WCERR, yychar, yyline, yytext()); }
 "wclog"                     { return new Symbol(sym.WCLOG, yychar, yyline, yytext()); }
+/*INPUT/ OUTPUT  ISTREAM */
 "istream"                   { return new Symbol(sym.ISTREAM, yychar, yyline, yytext()); }
 "iostream"                  { return new Symbol(sym.IOSTREAM, yychar, yyline, yytext()); }
 "wistream"                  { return new Symbol(sym.WISTREAM, yychar, yyline, yytext()); }
 "wiostream"                 { return new Symbol(sym.WIOSTREAM, yychar, yyline, yytext()); }
+/*INPUT/ OUTPUT  OSTREAM */
 "ostream"                   { return new Symbol(sym.OSTREAM, yychar, yyline, yytext()); }
 "wostream"                  { return new Symbol(sym.WOSTREAM, yychar, yyline, yytext()); }
 "endl"                      { return new Symbol(sym.ENDL, yychar, yyline, yytext()); }

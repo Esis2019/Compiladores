@@ -146,6 +146,7 @@ espacio=[ ,\t,\r]+
 "wchar_t"                   { lexeme=yytext(); return WCHAR_T; }
 "while"                     { lexeme=yytext(); return WHILE; }
 "begin"                     { lexeme=yytext(); return BEGIN; }
+/*FUNCIONES ITERATIVAS DE LA CLASE ARRAY*/
 "end"                       { lexeme=yytext(); return END; }
 "rbegin"                    { lexeme=yytext(); return RBEGIN; }
 "rend"                      { lexeme=yytext(); return REND; }
@@ -153,8 +154,7 @@ espacio=[ ,\t,\r]+
 "cend"                      { lexeme=yytext(); return CEND; }
 "crbegin"                   { lexeme=yytext(); return CRBEGIN; }
 "crend"                     { lexeme=yytext(); return CREND; }
-"cout"                      { lexeme=yytext(); return COUT; }
-"cin"                       { lexeme=yytext(); return CIN; }
+/*LIBRERIA CTYPE.H */
 "isalnum"                   { lexeme=yytext(); return ISALNUM; }
 "isalpha"                   { lexeme=yytext(); return ISALPHA; }
 "iscntrl"                   { lexeme=yytext(); return ISCNTRL; }
@@ -166,6 +166,9 @@ espacio=[ ,\t,\r]+
 "isspace"                   { lexeme=yytext(); return ISSPACE; }
 "isupper"                   { lexeme=yytext(); return ISUPPER; }
 "isxdigit"                  { lexeme=yytext(); return ISXDIGIT; }
+"tolower"                   { lexeme=yytext(); return TOLOWER; }
+"toupper"                   { lexeme=yytext(); return TOUPPER; }
+/*LIBRERIA STDIO.H */
 "fprintf"                   { lexeme=yytext(); return FPRINTF; }
 "fscanf"                    { lexeme=yytext(); return FSCANF; }
 "printf"                    { lexeme=yytext(); return PRINTF; }
@@ -190,8 +193,7 @@ espacio=[ ,\t,\r]+
 "freopen"                   { lexeme=yytext(); return FREOPEN; }
 "setbuf"                    { lexeme=yytext(); return SETBUF; }
 "setvbuf"                   { lexeme=yytext(); return SETVBUF; }
-"tolower"                   { lexeme=yytext(); return TOLOWER; }
-"toupper"                   { lexeme=yytext(); return TOUPPER; }
+/*LIBRERIA FENV.H */
 "feclearexcept"             { lexeme=yytext(); return FECLEAREXCEPT; }
 "feraiseexcept"             { lexeme=yytext(); return FERAISEEXCEPT; }
 "fegetexceptflag"           { lexeme=yytext(); return FEGETEXCEPTFLAG; }
@@ -203,8 +205,10 @@ espacio=[ ,\t,\r]+
 "feholdexcept"              { lexeme=yytext(); return FEHOLDEXCEPT; }
 "feupdateenv"               { lexeme=yytext(); return FEUPDATEENV; }
 "fetestexcept"              { lexeme=yytext(); return FETESTEXCEPT; }
+/*LIBRERIA LOCALE.H */ 
 "setlocale"                 { lexeme=yytext(); return SETLOCALE; }
 "localeconv"                { lexeme=yytext(); return LOCALECONV; }
+/*LIBRERIA MATH.H */
 "cos"                       { lexeme=yytext(); return COS; }
 "sin"                       { lexeme=yytext(); return SIN; }
 "tan"                       { lexeme=yytext(); return TAN; }
@@ -262,9 +266,12 @@ espacio=[ ,\t,\r]+
 "fabs"                      { lexeme=yytext(); return FABS; }
 "abs"                       { lexeme=yytext(); return ABS; }
 "fma"                       { lexeme=yytext(); return FMA; }
+/*LIBRERIA SETJMP.H */
 "Longjmp"                   { lexeme=yytext(); return LONGJMP; }
+/*LIBRERIA SIGNAL.H */
 "signal"                    { lexeme=yytext(); return SIGNAL; }
 "raise"                     { lexeme=yytext(); return RAISE; }
+/*LIBRERIA STDIO.H */
 "fgetc"                     { lexeme=yytext(); return FGETC; }
 "fgets"                     { lexeme=yytext(); return FGETS; }
 "fputc"                     { lexeme=yytext(); return FPUTC; }
@@ -287,6 +294,7 @@ espacio=[ ,\t,\r]+
 "feof"                      { lexeme=yytext(); return FEOF; }
 "ferror"                    { lexeme=yytext(); return FERROR; }
 "perror"                    { lexeme=yytext(); return PERROR; }
+/*LIBRERIA STLIB.H */
 "atof"                      { lexeme=yytext(); return ATOF; }
 "atoi"                      { lexeme=yytext(); return ATOI; }
 "atol"                      { lexeme=yytext(); return ATOL; }
@@ -324,6 +332,7 @@ espacio=[ ,\t,\r]+
 "wctomb"                    { lexeme=yytext(); return WCTOMB; }
 "mbstowcs"                  { lexeme=yytext(); return MBSTOWCS; }
 "wcstombs"                  { lexeme=yytext(); return WCSTOMBS; }
+/*LIBRERIA STRING.H */
 "memcpy"                    { lexeme=yytext(); return MEMCPY; }
 "memmove"                   { lexeme=yytext(); return MEMMOVE; }
 "strcpy"                    { lexeme=yytext(); return STRCPY; }
@@ -344,6 +353,7 @@ espacio=[ ,\t,\r]+
 "memset"                    { lexeme=yytext(); return MEMSET; }
 "strerror"                  { lexeme=yytext(); return STRERROR; }
 "strlen"                    { lexeme=yytext(); return STRLEN; }
+ /*LIBRERIA TIME.H */ 
 "clock"                     { lexeme=yytext(); return CLOCK; }
 "difftime"                  { lexeme=yytext(); return DIFFTIME; }
 "mktime"                    { lexeme=yytext(); return MKTIME; }
@@ -353,6 +363,7 @@ espacio=[ ,\t,\r]+
 "gmtime"                    { lexeme=yytext(); return GMTIME; }
 "localtime"                 { lexeme=yytext(); return LOCALTIME; }
 "strftime"                  { lexeme=yytext(); return STRFTIME; }
+/*LIBRERIA WCHAR.H */
 "fgetwc"                    { lexeme=yytext(); return FGETWC; }
 "fgetws"                    { lexeme=yytext(); return FGETWS; }
 "fputwc"                    { lexeme=yytext(); return FPUTWC; }
@@ -410,6 +421,7 @@ espacio=[ ,\t,\r]+
 "wmemmove"                  { lexeme=yytext(); return WMEMMOVE; }
 "wmemset"                   { lexeme=yytext(); return WMEMSET; }
 "wcsftime"                  { lexeme=yytext(); return WCSFTIME; }
+/*LIBRERIA CTYPE.H */
 "iswalnum"                  { lexeme=yytext(); return ISWALNUM; }
 "iswalpha"                  { lexeme=yytext(); return ISWALPHA; }
 "iswblank"                  { lexeme=yytext(); return ISWBLANK; }
@@ -428,16 +440,21 @@ espacio=[ ,\t,\r]+
 "towctrans"                 { lexeme=yytext(); return TOWCTRANS; }
 "wctrans"                   { lexeme=yytext(); return WCTRANS; }
 "wctype"                    { lexeme=yytext(); return WCTYPE; }
+/*INPUT/ OUTPUT  IOSTREAM */
+"cout"                      { lexeme=yytext(); return COUT; }
+"cin"                       { lexeme=yytext(); return CIN; }
 "cerr"                      { lexeme=yytext(); return CERR; }
 "clog"                      { lexeme=yytext(); return CLOG; }
 "wcin"                      { lexeme=yytext(); return WCIN; }
 "wcout"                     { lexeme=yytext(); return WCOUT; }
 "wcerr"                     { lexeme=yytext(); return WCERR; }
 "wclog"                     { lexeme=yytext(); return WCLOG; }
+/*INPUT/ OUTPUT  ISTREAM */
 "istream"                   { lexeme=yytext(); return ISTREAM; }
 "iostream"                  { lexeme=yytext(); return IOSTREAM; }
 "wistream"                  { lexeme=yytext(); return WISTREAM; }
 "wiostream"                 { lexeme=yytext(); return WIOSTREAM; }
+/*INPUT/ OUTPUT  OSTREAM */
 "ostream"                   { lexeme=yytext(); return OSTREAM; }
 "wostream"                  { lexeme=yytext(); return WOSTREAM; }
 "ends"                      { lexeme=yytext(); return ENDS; }
